@@ -10,3 +10,9 @@ fh.close()
 
 
 progs = glob.glob("*.py")
+
+for prog in progs:
+    fh = open(prog, "r")
+    pCode = fh.readlines()
+    fh.close()
+
